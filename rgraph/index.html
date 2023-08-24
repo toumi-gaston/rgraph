@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TL-01 - RGraph</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Production d'interface animées - RGraph</h1>
+        <h2>Un travail présenté par Simon Sarrazin et Noémie Gagnon</h2> 
+
+    </header>
+    <main>
+        <!--BAR CHART - SACRES QUÉBÉCOIS-->
+        <section id="barChart_container">
+            <h3>Les sacres québecois</h3>
+            <div class="pas-un-canvas" style="width: 550px; height: 300px" id="svg_bar_chart"></div>
+        </section>
+
+        <!--PIE CHART - HOMMES CÉLIBATAIRES-->
+        <section id="pie_container">
+            <h3>Pourquoi y a-t-il plus d'hommes célibataires que de femmes?</h3>
+            <ol>
+                <li>J'ai une apparence moyenne mais une belle personalité.</li>
+                <li>Je suis gêné en présence d'une femme mais à l'aise lorsqu'on se connait bien.</li>
+                <li>Je ne suis pas entouré de personnes populaires mais j'ai de bons amis drôles.</li>
+                <li>Je n'ai pas les moyens de lui acheter de belles choses mais je suis prêt à mettre beaucoup d'effort et de temps.</li>
+                <li>Je suis un paladin niveau 80.</li>
+            </ol>
+            <canvas id="pieChart" width="600" height="350" style="float: right">[No canvas support]</canvas>
+        </section>
+
+         <!--SKETCH CHART - -->
+        <section id="sketch_chart">
+            <canvas id="sketchChart">[No canvas support]</canvas>
+        </section>
+        
+
+         <!--FUEL CHART-->
+        <section id="fuel_container">
+            <h3>Quand un conducteur devrait-il remettre de l'essence?</h3>
+            <p>Il est recommandé de mettre de l'essence lorsque le réservoir se situe entre 25% et 50%.</p>
+            <p>Attendre plus longtemps pourrait engendrer des problèmes comme une pompe à essence qui surchauffe ou un filtre à essence bouché par l'accumulation de sédiments.</p>
+            <p class="source">Source: https://www.mattcastruccinissan.com/blog/what-fuel-tank-level-should-drivers-refuel-at/</p>
+        <canvas id="fuelChart">[No canvas support]</canvas>
+        </section>
+
+         <!--LINE CHART-->
+        <section id="line_chart">
+            <h3>Un hiver neigeux...?</h3>
+            <p>Quelle quantité de neige est-il tombé sur Rimouski depuis novembre? C'est ce que vous indique ce graphique! (En centimètres)</p>
+            <div class="pas-un-canvas" id="lineChart" style="width: 950px; height: 250px" id="chart-container"></div>
+            <p class="source">Source: <a href="https://www.environnement.gouv.qc.ca/climat/donnees/sommaire.asp">Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs</a></p>
+        </section>
+        
+
+         <!--RADAR-->
+        <section id="radar_chart">
+            <h3>Dans quelle maison de Pouddlard seraient les personnages d'Hunger Games?</h3>
+            <h4>Légende</h4>
+            <div class="libelle-legende">
+                <div class="couleur Katniss"></div>
+                <p>Katniss Everdeen</p>
+            </div>
+            <div class="libelle-legende">
+                <div class="couleur Peeta"></div>
+                <p>Peeta Melark</p>
+            </div>
+            <div class="libelle-legende">
+                <div class="couleur Gale"></div>
+                <p>Gale Hawthorne</p>
+            </div>
+            <div class="libelle-legende">
+                <div class="couleur Prim"></div>
+                <p>Prim Everdeen</p>
+            </div>
+            <div class="pas-un-canvas" style="width: 600px; height: 500px" id="radarChart"></div>
+        </section>
+        
+    </main>
+    <footer>
+
+        <p>AGU - Production d'interfaces interactives animées</p>
+        <p>Simon Sarrazin & Noémie Gagnon</p>
+        <p>date 2023</p>
+
+    </footer>
+    <script src="./assets/js/RGraph.common.core.js"></script>
+    <script src="./assets/js/RGraph.fuel.js"></script>
+    <script src="./assets/js/RGraph.bar.js"></script>
+    <script src="./assets/js/RGraph.common.dynamic.js"></script>
+    <script src="./assets/js/RGraph.common.effects.js"></script>
+    <script src="./assets/js/RGraph.pie.js"></script>
+    <script src="./assets/js/RGraph.line.js"></script>
+    <script src="./assets/js/RGraph.svg.common.core.js"></script>
+    <script src="./assets/js/RGraph.svg.bar.js"></script>
+    <script src="./assets/js/RGraph.svg.line.js" ></script>
+    <script src="./assets/js/RGraph.svg.radar.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* CSS HEX 
+--royal-blue-dark: #16265fff;
+--maximum-purple: #7e2c8fff;
+--ruby: #d81159ff;
+--orange-pantone: #ff600bff;
+--maximum-yellow-red: #ffbc42ff;
+--teal: #218380ff;
+--sky-blue-crayola: #73d2deff;*/
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    margin:0;
+    background: linear-gradient(50deg,#D81159,#FFBC42,#73D2DE);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+header{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 3rem auto;
+    padding: 3rem 4rem;
+    text-align: center;
+    Color: black;
+
+}
+
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.5rem ;
+}
+
+section{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    height: fit-content;
+    width: 40vw;
+    min-width: 400px;
+    padding: 2rem 2rem;
+    margin: 1rem;
+}
+
+
+
+canvas, .pas-un-canvas{
+    align-self: center;
+    max-width: 100%;
+}
+
+.pas-un-canvas{
+    overflow: clip;
+}
+
+#barChart_container>div{
+    width: 600px;
+}
+
+h3{
+    align-self: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.source, .source > a{
+    font-size: 0.8rem;
+}
+
+.source > a{
+    color: black;
+}
+
+p{
+    text-align: left;
+}
+
+
+.libelle-legende{
+    display: flex;
+}
+
+
+.couleur{
+    border-radius: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.2rem;
+}
+
+.Katniss{
+    background-color: #D81159;
+}
+
+.Peeta{
+    background-color: #73D2DE;
+}
+
+.Gale{
+    background-color: #16265fff;
+}
+
+.Prim{
+    background-color: #ff600bff;
+}
+
+footer{
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3rem 0 1rem 0;
+}
+
+footer > p{
+    text-align: center;
+
+}
